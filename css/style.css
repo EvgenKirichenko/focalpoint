@@ -1,0 +1,348 @@
+@font-face {
+  font-family: Proxima Nova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot?#iefix) format("embedded-opentype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff2) format("woff2"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff) format("woff"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.ttf) format("truetype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.svg#wf) format("svg");
+  font-weight: 300;
+  font-style: normal
+}
+
+@font-face {
+  font-family: Proxima Nova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot?#iefix) format("embedded-opentype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff2) format("woff2"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff) format("woff"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.ttf) format("truetype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.svg#wf) format("svg");
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: Proxima Nova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot?#iefix) format("embedded-opentype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff2) format("woff2"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff) format("woff"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.ttf) format("truetype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.svg#wf) format("svg");
+  font-weight: 700;
+  font-style: normal
+}
+
+body{
+	font: 400 14px/1.43 'Proxima Nova', sans-serif;
+	color: #666666;
+	background: #fff;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+.ba-container__article{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+	background-color: #cf0f0f;
+	border: none;
+	color: #fff;
+	padding: 10px;
+	font: 400 20px/1.42 'Proxima Nova', sans-serif;
+	border-bottom: 2px solid #ae0000;
+}
+.ba-button--no-arrow{
+	font: 700 24px/1.42 'Proxima Nova', sans-serif;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+	background-color: #ae0000;
+	color: #fff;
+	border-bottom: 2px solid #cf0f0f;
+}
+.ba-button:after{
+	content: url('../img/ico/strelka.png');
+	padding: 0 0 0 20px;
+}
+.ba-button--no-arrow:after{
+	content: none;
+}
+.ba-login_link a:hover,
+.ba-nav__links a:hover,
+.ba-intro__contacts a:hover{
+	color: #cf0f0f;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+.ba-header{
+	background: #000000;
+	width: 100%;
+}
+.ba-header__row{
+	display: flex;
+	align-content: center;
+	max-width: 1024px;
+	justify-content: space-between;
+	align-self: center;
+	margin: 0 auto;
+	padding: 12px 0 0 0;
+}
+.ba-nav__links{
+	display: flex;
+	list-style-type: none;
+	font: 700 18px/1.42 'Proxima Nova', sans-serif;
+	margin: 0 70px 21px;
+
+}
+.ba-nav__links a, .ba-intro__contacts a{
+	color: #fff;
+	text-decoration: none;
+	}
+.ba-blog__nav--ico{
+	background: url('../img/ico/blog-ico.png') no-repeat 0;
+	margin-right: 60px;
+	padding: 10px 10px 10px 25px;
+	}
+.ba-login__nav--ico{
+	background: url('../img/ico/lock-ico.png') no-repeat 10%;
+	padding: 10px 10px 10px 35px;
+	border: 1px solid #4B4B4B;
+
+	}
+	.ba-login__nav--ico:hover{
+		border: 1px solid #CD0000;
+
+		}
+.ba-section__intro{
+	background: url('../img/bg-blur.jpg') no-repeat 50% / cover;
+	padding-top: 64px;
+}
+.ba-intro__left img{
+	display: block;
+	padding-left: 14px;
+}
+.ba-intro__left{
+	display: flex;
+	margin-right: 30px;
+}
+.ba-intro{
+	display: flex;
+	color: #fff;
+}
+.ba-intro__tittle h1{
+	font: 700 35px/1.42 'Proxima Nova', sans-serif;
+	margin: 0;
+	padding: 18px 0 0 0;
+}
+.ba-intro__tittle h2{
+	font: 300 27px/1.42 'Proxima Nova', sans-serif;
+	margin: 0;
+	padding-bottom: 35px;
+}
+.ba-intro__ico{
+	display: flex;
+	font: 700 28px/1.42 'Proxima Nova', sans-serif;
+	align-items: center;
+}
+.ba-intro__contacts img{
+	margin: 0 20px 0;
+}
+.ba-intro__contacts{
+	padding: 50px 20px 0 0;
+	width: 50%;
+}
+.ba-intro_form{
+	padding-top: 50px;
+	width: 45%;
+}
+.ba-intro_form form{
+	display: flex;
+	flex-direction: column;
+
+}
+.ba-contacts-form{
+	display: flex;
+}
+.ba-button span{
+font-weight: bold;
+}
+.ba-intro_form input[type="text"],
+.ba-intro_form input[type="email"],
+.ba-intro_form input[type="password"]{
+	border: none;
+	color: #fff;
+	padding: 10px 15px;
+	font: 400 20px/1.42 'Proxima Nova', sans-serif;
+}
+.ba-intro_form input[type="text"],
+.ba-intro_form input[type="email"]{
+	border-bottom: 1px solid #e5e5e5
+}
+.ba-section__article{
+		padding-top: 20px;
+
+	}
+.ba-login_link{
+	text-align: center;
+	padding-bottom: 25px;
+}
+.ba-login_link span{
+	font-weight: 700;
+}
+.ba-login_link a{
+	text-decoration: none;
+	color: #666666
+}
+.ba-article__tittle h2{
+	font: 400 36px/1.42 'Proxima Nova', sans-serif;
+	margin: 0;
+	padding: 18px 0 0 0;
+	}
+		.ba-article__tittle h2:after{
+		content: url('../img/ico/dollar-ico.png');
+	}
+.ba-article__tittle h3{
+	font: 300 24px/1.42 'Proxima Nova', sans-serif;
+	margin: 0;
+	padding-bottom: 35px;
+}
+.ba-article__tittle{
+	text-align: center;
+}
+.ba-article{
+	background: url('../img/dollars.png')  no-repeat 0 -100%/ cover;
+}
+.ba-article__row{
+	display: flex;
+}
+.ba-article__post{
+	display: flex;
+	width: 50%;
+	margin-right: 30px;
+}
+.ba-span-post__keyword{
+	color: #333333;
+	font-size: 18px;
+	font-weight: 700;
+}
+.ba-span-post__paragraph{
+	font-size: 18px;
+	font-weight: 400;
+
+}
+.ba-article__img{
+	display: flex;
+    justify-content: center;
+    background-color: #cf0f0f;
+    min-width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    align-self: center;
+    margin-right: 20px;
+}
+.ba-article__img img{
+	display: block;
+	align-self: center;
+}
+.ba-section__bottom{
+	border-top: 1px solid #eaeaea;
+	border-bottom: 1px solid #474747;
+	text-align: center;
+}
+.ba-section-bottom__tittle{
+	color: #333333;
+	font-size: 36px;
+	font-weight: 400;
+	margin: 0;
+}
+.ba-section-bottom__tittle:after{
+	content: url('../img/ico/heart.png');
+	}
+.ba-section-bottom__subtittle{
+	font-size: 24px;
+	font-weight: 400;
+	margin: 0;
+}
+.ba-section__bottom--light{
+	padding: 80px 0 60px;
+}
+.ba-section__bottom--grey{
+	display: flex;
+	background: #333333;
+	padding: 36px 20px;
+}
+.ba-section__gray{
+	display: flex;
+	margin: 0 auto;
+}
+.ba-call-to-action{
+	color: #fcf8f8;
+	font-size: 36px;
+	font-weight: 400;
+	margin: 0 150px 0 0
+}
+.ba-end-article{
+	text-align: center;
+	padding: 30px 0;
+	font-size: 18px;
+}
+.ba-footer{
+	background: #000;
+	padding: 22px 5px;
+}
+.ba-footer__nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 900px;
+	margin: 0 auto;
+	color: #fff;
+}
+.ba-footer__nav-menu{
+	font-size: 12px;
+	display: flex;
+	list-style: none;
+}
+.ba-footer__nav-menu li{
+	margin-right: 10px;
+	}
+.ba-footer__nav-menu a{
+	color: #fff;
+	text-decoration: none;
+}
+.ba-footer__nav-menu a:hover{
+	color: #cf0f0f;
+	}
