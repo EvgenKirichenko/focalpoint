@@ -183,10 +183,12 @@ textarea {
 .ba-intro__contacts{
 	padding: 50px 20px 0 0;
 	width: 50%;
+	max-width: 370px;
 }
 .ba-intro_form{
 	padding-top: 50px;
 	width: 45%;
+	max-width: 300px;
 }
 .ba-intro_form form{
 	display: flex;
