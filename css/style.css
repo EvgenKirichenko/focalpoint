@@ -30,8 +30,8 @@ body{
 
 /* Layout */
 .ba-container{
-	padding: 64px 20px 0 20px;
-	/* padding-right: 20px; */
+	padding-left: 20px;
+	padding-right: 20px;
 	max-width: 1200px;
 }
 .ba-container__article{
@@ -149,6 +149,7 @@ textarea {
 		}
 .ba-section__intro{
 	background: url('../img/bg-blur.jpg') no-repeat 50% / cover;
+	padding-top: 64px;
 }
 .ba-intro__left img{
 	display: block;
