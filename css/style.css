@@ -30,8 +30,8 @@ body{
 
 /* Layout */
 .ba-container{
-	padding-left: 20px;
-	padding-right: 20px;
+	padding: 64px 20px 0 20px;
+	/* padding-right: 20px; */
 	max-width: 1200px;
 }
 .ba-container__article{
@@ -149,7 +149,6 @@ textarea {
 		}
 .ba-section__intro{
 	background: url('../img/bg-blur.jpg') no-repeat 50% / cover;
-	padding-top: 64px;
 }
 .ba-intro__left img{
 	display: block;
@@ -183,7 +182,7 @@ textarea {
 .ba-intro__contacts{
 	padding: 50px 20px 0 0;
 	width: 50%;
-	max-width: 370px;
+	max-width: 340px;
 }
 .ba-intro_form{
 	padding-top: 50px;
